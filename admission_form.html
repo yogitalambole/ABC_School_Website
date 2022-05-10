@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+
+{% block title %} 
+School Management System
+{% endblock title %}
+
+
+{% block body%} {% load static %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<div class= 'container' style= "width:80;">
+
+    <form>
+        <ul class="navbar-brand" href="/home" style="margin: 35px 50px 0px 0px">{% load static %} 
+            <img src="{% static 'F:/yogita/IT certi/django python/my/static/images/logo.svg' %}" width="50" height="50" 
+            class="d-inline-block align-text-top"><h4 style="display: block; margin: -40px 0px 0px 60px">ABC School </h4>{% load static %} 
+            <h6 style="margin: -5px 00px 0px 60px; color:#bb0718">Nursary, Primary & Junior Secondary School</h6>
+            <h1 style="margin: 30px 00px 0px 0px">Admission form</h1>
+        </ul>
+    
+    <hr>  <h6 style="margin: 0px 00px 20px 0px; color:green">STUDENT INFORMATION</h6>
+        <label style= " margin: 0px 0px 5px 0px" >First Name :</label>
+        <input style="width:300px;  margin: 0px 0px 0px 0px " type="text" placeholder="first name" size="15" 
+        class="form-control" id="first_name" name="first_name" required/>
+        <label style= " display: block; margin: -67px 0px 5px 390px">Middle Name :</label>
+        <input style="width:300px; margin: 0px 0px 0px 390px" type="text" placeholder="middle name" size="15" 
+        class="form-control" id="second_name" name="second_name" aria-describedby="sm" required/>
+        <label style= "display: block; margin: -67px 0px 5px 790px" >Last Name :</label>
+        <input style="width:300px; margin: 0px 0px 0px 790px" type="text" placeholder="last name" size="15" 
+        class="form-control" id="third_name" name="third_name" aria-describedby="lm" required/>
+        
+        <label for="exampleInputPassword1" style= "display: block; margin: 20px 0px 5px 390px" class="form-label">Birth Place :</label>
+        <input type="text" id="birth_place" name="birth_place" placeholder="date of birth" class="form-control" style="width:300px; margin: 0px 0px 0px 390px">
+        <label for="exampleInputPassword1" style= "display: block; margin: -67px 0px 5px 0px" class="form-label">Date of Birth :</label>
+        <input type="date" id="birth_date" name="birth_date" placeholder="date of birth" class="form-control" style="width:300px; margin: 0px 0px 0px 0px" required/>
+        
+        <label style= "display: block; margin: 20px 0px 5px 00px" >Nationality :</label>
+        <input style="width:300px; margin: 0px 0px 30px 0px" type="text"  size="15" 
+        class="form-control" id="nationality" name="nationality" aria-describedby="lm" required/>
+
+        <div>  
+            <label style= "display: block; margin: -95px 0px 5px 390px">   
+            Gender :  
+            </label><br>  
+            <input style= "display: block; margin: -15px 0px 5px 390px" id="gender" name="gender"
+             type="radio" value="Male" checked >
+            <a style= "display: block; margin: -25px 0px 25px 410px"> Male </a>
+            <input style= "display: block; margin: -45px 0px 5px 480px" id="gender" name="gender"
+            type="radio" value="Female" checked> 
+            <a style= "display: block; margin: -25px 0px 70px 500px">Female </a>
+            <input style= "display: block; margin: -87px 0px 5px 585px" id="gender" name="gender"
+            type="radio" value="Other" checked> 
+            <a style= "display: block; margin: -25px 0px 35px 605px">Other </a>
+        </div>  
+        
+    <hr><h6 style="margin: 0px 00px 20px 0px; color:green">PARENT'S INFORMATION</h6>
+        <label style= " margin: 0px 0px 5px 0px" >Full Name :</label>
+        <input style="width:400px;  margin: 0px 0px 0px 0px " type="text" id="parents_name" name="parents_name"
+        placeholder="first name            middle name             last name" size="15" 
+        class="form-control" required/>
+        <label style= " display: block; margin: -67px 0px 5px 450px">Contact No :</label>
+        <input style="width:300px; margin: 0px 0px 0px 450px" type="text" placeholder="+91" size="15" 
+        class="form-control" id="parents_contact" name="parents_contact" type="numbers" aria-describedby="sm" required/>
+
+        <label style= " margin: 20px 0px 5px 0px" >Occupation :</label>
+        <input style="width:400px;  margin: 0px 0px 0px 0px " type="text" size="15" 
+        class="form-control" id="parents_occupation" name="parents_occupation" required/>
+
+        <div>  
+            <label style= "display: block; margin: -65px 0px 5px 450px">   
+            Gender :  
+            </label><br>  
+            <input style= "display: block; margin: -15px 0px 5px 450px" type="radio" id="parents_gender" name="parents_gender"
+             value="Male" checked >
+            <a style= "display: block; margin: -25px 0px 25px 470px"> Male </a>
+            <input style= "display: block; margin: -45px 0px 5px 540px" type="radio" id="parents_gender" name="parents_gender"
+            value="Female" checked> 
+            <a style= "display: block; margin: -25px 0px 70px 560px">Female </a>
+            <input style= "display: block; margin: -87px 0px 5px 645px" type="radio" id="parents_gender" name="parents_gender"
+            value="Other" checked> 
+            <a style= "display: block; margin: -25px 0px 35px 665px">Other </a>
+        </div> 
+
+        <label style= " margin: 0px 0px 5px 0px" >Relation :</label>
+        <input style="width:400px;  margin: 0px 0px 0px 0px " type="text" size="15" 
+        class="form-control" id="Relation" name="Relation" required/>
+
+    <hr><h6 style="margin: 0px 00px 20px 0px; color:green">COURSE DETAILS</h6>
+    <div>
+        <label style= " margin: 0px 0px 5px 0px">Admission Level :</label>
+        <select id="admission_in" name="admission_in" onchange="validate('s1','s2')" class="form-control" style="width:300px">  
+        <option value="">select</option>
+        <option value="Nursary">Nursary</option>  
+        <option value="Sr kg">Sr kg</option>  
+        <option value="Jr kg">Jr kg</option>  
+        <option value="Primary School">Primary School</option>  
+        <option value="Secondary School">Secondary School</option>  
+        </select>
+    </div> 
+    <div><label style= " display:block; margin: -67px 0px 5px 450px" >Select name of Course :</label>
+        <select id="course" name="course"  class="form-control" id="course" 
+        style= " width:350px; display:block; margin: 0px 0px 5px 450px">
+            <option value="Nursary">Nursary</option> 
+            <option value="Sr kg">Sr kg</option> 
+            <option value="Jr kg">Jr kg</option>  
+            <option value="1 Standard">1st Standard</option>  
+            <option value="2 Standard">2nd Standard</option>  
+            <option value="3 Standard">3rd Standard</option>  
+            <option value="4 Standard">4th Standard</option>  
+            <option value="5 Standard">5th Standard</option>  
+            <option value="6 Standard">6th Standard</option>  
+            <option value="7 Standard">7th Standard</option>  
+            <option value="8 Standard">8th Standard</option>  
+            <option value="9 Standard">9th Standard</option>  
+            <option value="10 Standard">10th Standard</option>
+        </select>
+    </div> 
+    <hr>
+    <h6 style="margin: 0px 00px 20px 0px; color:green">CONTACT AND ADDRESS</h6>
+    <div>
+        <!----- Address ---------------------------------------------------------->
+    <td >Address :<br /><br /></td>
+    <td><textarea name="address" id="address" rows="4" style="width:800px" class="form-control" cols="30"></textarea></td>
+    <!----- City ---------------------------------------------------------->
+    <div><label style= " margin: 20px 0px 5px 0px">City :</label>
+    <input type="text" name="city" id="city" class="form-control"  style="width:300px;" maxlength="30" />
+    (max 30 characters a-z and A-Z)
+    </label></div>
+    <!----- Pin Code ---------------------------------------------------------->
+    <div><label style= "display:block; margin: -88px 0px 5px 450px">Pin Code :</label>
+    <input type="text" name="pin_code" id="pin_code" class="form-control"  style="width:300px; display:block; margin: -5px 0px 5px 450px" maxlength="6" />
+    <a style="width:300px; display:block; margin: -5px 0px 5px 450px">(6 digit number)</a>
+    </label></div>
+     
+    <!----- State ---------------------------------------------------------->
+    <div><label style= " margin: 20px 0px 5px 0px">State :</label>
+    <input type="text" name="state" id="state" class="form-control"  style="width:300px;" maxlength="30" />
+    (max 30 characters a-z and A-Z)
+    </label></div>
+     
+    <!----- Country ---------------------------------------------------------->
+    <div><label style= "display:block; margin: -88px 0px 5px 450px">Country :</label>
+    <input type="text" name="country" id="country" class="form-control"  style="width:300px;  display:block; margin: -5px 0px 5px 450px" value="India" readonly="readonly" /></td>
+    </label></div>
+</div>
+<br><hr>
+
+
+<tr>
+    <td colspan="2" align="center">
+    <input type="submit" class="btn btn-primary" value="Submit">
+    <input type="reset" class="btn btn-primary" value="Reset">
+    </td>
+    </tr>
+      </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> {% load static %}
+{% endblock body%}
