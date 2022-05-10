@@ -1,0 +1,315 @@
+{% extends 'base.html' %}
+
+
+{% block title %} 
+School Management System
+{% endblock title %}
+
+
+{% block body%} {% load static %} 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<div class= 'container' my=20 style= "width:800px; margin:50px 0px 0px 300px"> 
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="10"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="11"></li>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 1.png' %}" 
+                     class="d-block w-100" alt="1"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>WELCOME TO ABC SCHOOL</h5>
+                <p>"Education is the passport to the future, for tomorrow belongs to those who prepare for it today."</p>
+              </div>
+            </div>
+            <div class="carousel-item">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 2.jpg' %}" 
+                     class="d-block w-100" alt="2" ></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>We provide best Classrooms.</h5>
+                <p>"Learn as much as you can while you are young, since life becomes too busy later."</p>
+              </div>
+            </div>
+            <div class="carousel-item">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 3.png' %}" 
+                     class="d-block w-100" alt="3"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>we provide best Black/GreenBoard in Classrooms.</h5>
+                <p>"Education is our passport to the future, for tomorrow belongs to the people who prepare for it today."</p>
+              </div>
+            </div>
+            <div class="carousel-item">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 4.jpg' %}" 
+                     class="d-block w-100" alt="4"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>We provide large Corridor area.</h5>
+                <p>"Beyond the corridor of our space-time there are infinite numbers of universes, each of them is governed by its own set of laws and physics."</p>
+              </div>
+            </div>
+            <div class="carousel-item">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 6.jpg' %}" 
+                     class="d-block w-100" alt="5"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>We provide best Laboratory</h5>
+                <p>" Innovation and renewal are required to keep a laboratory on the frontiers of science."</p>
+              </div>
+            </div>
+            <div class="carousel-item ">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 7.jpg' %}" 
+                     class="d-block w-100" alt="6"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>We provide Beautiful PlayHouse</h5>
+                <p>"When we make Play the foundation of learning, we teach the Whole child.</p>
+              </div>
+            </div>
+            <div class="carousel-item ">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 8.jpg' %}" 
+                     class="d-block w-100" alt="7"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>We provide Large PlayGround</h5>
+                <p>"Make life your playground, not your battlefield."</p>
+              </div>
+            </div>
+            <div class="carousel-item ">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 9.jpg' %}" 
+                     class="d-block w-100" alt="8"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>ABC School</h5>
+                <p>2015</p>
+              </div>
+            </div>
+            <div class="carousel-item ">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 10.jpg' %}" 
+                     class="d-block w-100" alt="9"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>Our School give you Best Opportunities</h5>
+                <p>"The most important day of a person’s education is the first day of school, not Graduation Day."</p>
+              </div>
+            </div>
+            <div class="carousel-item ">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 11.jpg' %}" 
+                     class="d-block w-100" alt="10"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>Achivities for  improvemrnt ourself.</h5>
+                <p>"School bells are ringing loud and clear; vacation’s over, school is here."</p>
+              </div>
+            </div>
+            <div class="carousel-item ">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 12.jpg' %}" 
+                     class="d-block w-100" alt="11"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>Activities you want as.</h5>
+                <p>“The roots of education are bitter, but the fruit is sweet."</p>
+              </div>
+            </div>
+            <div class="carousel-item ">{% load static %}
+                <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\sch 13.jpg' %}" 
+                     class="d-block w-100" alt="12"></li>{% load static %}
+              <div class="carousel-caption d-none d-md-block" style="background: rgba(255, 255, 255, 0.25)">
+                <h5>ABC HighSchool.</h5>
+                <p>"This is a new year. A new beginning. And things will change"</p>
+              </div>
+            </div>
+        </div>
+        <!--==========================================-->
+        <!-- Side Buttons                             -->
+        <!--==========================================-->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div>
+        
+</div>
+
+<div class="paraggraph" STYLE="margin: 30px 250px 20px 250px">
+    <h2 class="text-center" STYLE="color:green; text-decoration-line: underline">WELCOME TO ABC SCHOOL</h2>
+    <p>A warm welcome to Canossa High School. Canossa School situated in Mahim, was started in 1932 as a Primary School, 
+    annexed to the Parish of Our Lady of Victories. It was recognized as a High School in 1946.</p>
+    <p>Canossa High School is a Catholic School for Girls, established and administered by the Canossian Daughters of Charity. 
+    The School is under the jurisdiction of the Archbishop of Mumbai.</p>
+    <p>The course of instruction includes all the subjects prescribed by the Government for English Teaching Schools, in Maharashtra State. The school is subject to inspection by the Department of Education, Government of Maharashtra. 
+    The School comprises of ten standards and prepares pupils for the S.S.C. Examination.</p>
+
+    <ul class="text-center" my=3>{% load static %}
+        <li><img src="{% static 'F:\yogita\IT certi\django python\my\static\images\about us 1.jpg' %}" 
+            class="img-fluid" height=400 width=400>
+        </li>{% load static %}
+    </ul
+    
+    <p>Intellectual training is imparted through instruction aiming at academic excellence, 
+        helping them to think for themselves and arrive at the right judgment. 
+        Physical Education is promoted with the purpose of developing a sound mind in a healthy body. 
+        Programmes offered are Physical Training, Apparatus Drill and special coaching in athletics, basket-ball, 
+        throw-ball, karate etc. Emotional and social training is encouraged through the House System, Class Democracy,
+         Leadership, Teamwork, and Works of Mercy conducted through the St. Magdalene of Canossa Club and Social 
+         Service Classes.
+        Cultural training is fostered through co-curricular activities like Dramatics, Dance, Elocution, Singing, etc.
+        We aim at training our pupils to be simple, honest, kind and cheerful, both in school and at home, ever-ready to
+         be of service to the needy and the down-trodden, to be proud citizens of their country and to be inspiring 
+         messengers of change in the world of today.</p>
+        
+    <p> The course of instruction includes all the subjects prescribed by the Government for English Teaching Schools,
+         in Maharashtra State. The school is subject to inspection by the Department of Education, Government of 
+         Maharashtra. The School comprises of ten standards and prepares pupils for the S.S.C. Examination.</p>
+
+    </div>
+
+        <!--==========================================-->
+        <!--                Cards                     -->
+        <!--==========================================-->
+
+    <div class="my-5 text-center">
+        <h4>Latest News and Updates</h4>
+
+        <div class="card" style="width: 20rem; margin: 30px 100px 20px 100px"> {% load static %}
+            <a class="ll">
+            <img src="{% static 'F:\yogita\IT certi\django python\my\static\images\n1.jpg' %}" 
+            class="card-img-top" alt="marathi divas" sizes="(max-width:479px) 479px, 100vw " width="400" height="200"
+            >{% load static %}</a>
+            <div class="card-body">
+                <p class="card-text">
+                    <h5>Marathi Diwas</h5>
+                    <h6>Feb 27, 2021</h6>
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem; margin: -360px 400px 20px 500px"> {% load static %}
+            <img src="{% static 'F:\yogita\IT certi\django python\my\static\images\n2.jpg' %}" 
+            class="card-img-top" alt="marathi divas" sizes="(max-width:479px) 479px, 100vw " width="400" height="200"
+            {% load static %}
+            <div class="card-body">
+                <p class="card-text">
+                    <h5>Inter-School English Elocution Competition</h5>
+                    <h6>Jan 31, 2021</h6>
+                </p>
+            </div> 
+        </div>
+        <div class="card" style="width: 20rem; margin: -360px 700px 20px 900px"> {% load static %}
+            <img src="{% static 'F:\yogita\IT certi\django python\my\static\images\n3.jpg' %}" 
+            class="card-img-top" alt="marathi divas" sizes="(max-width:479px) 479px, 100vw " width="400" height="200"
+            >{% load static %}
+            <div class="card-body">
+                <p class="card-text">
+                    <h5>6th National Peace Convention</h5>
+                    <h6>Jan 30, 2021</h6>
+                </p>
+            </div> 
+        </div>
+       
+    </div>
+
+
+    <div class="my-5 text-center">
+
+        <div class="card" style="width: 20rem; margin: 30px 100px 32px 100px"> {% load static %}
+            <img src="{% static 'F:\yogita\IT certi\django python\my\static\images\n4.jpeg' %}" 
+            class="card-img-top" alt="marathi divas" sizes="(max-width:479px) 479px, 100vw " width="400" height="200"
+            >{% load static %}
+            <div class="card-body">
+                <p class="card-text">
+                    <h5>Martry’s Day</h5>
+                    <h6>Jan 30, 2021</h6>
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem; margin: -360px 400px 20px 500px"> {% load static %}
+            <img src="{% static 'F:\yogita\IT certi\django python\my\static\images\n5.jpg' %}" 
+            class="card-img-top" alt="marathi divas" sizes="(max-width:479px) 479px, 100vw " width="400" height="200"
+            >{% load static %}
+            <div class="card-body">
+                <p class="card-text">
+                    <h5>LEAD-2021</h5>
+                    <h6>Jan 29, 2021</h6>
+                </p>
+            </div> 
+        </div>
+        <div class="card" style="width: 20rem; margin: -360px 700px 32px 900px"> {% load static %}
+            <img src="{% static 'F:\yogita\IT certi\django python\my\static\images\n6.jpg' %}" 
+            class="card-img-top" alt="marathi divas" sizes="(max-width:479px) 479px, 100vw " width="400" height="200"
+            >{% load static %}
+            <div class="card-body">
+                <p class="card-text">
+                    <h5>Certificate of Appreciation</h5>
+                    <h6>Jan 26, 2021</h6>
+                </p>
+            </div> 
+        </div>
+       
+    </div>
+
+    {% comment %} #########################---FOOTER---######################### {% endcomment %}
+    <footer class="et-l et-l--footer" STYLE="width:1550px; background:#545b62">
+        <div class="et_builder_inner_content et_pb_gutters3" >
+    <div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
+            
+            <div class="et_pb_row et_pb_row_0_tb_footer">
+            <div class="et_pb_column et_pb_column_1_3 et_pb_column_0_tb_footer  
+            et_pb_css_mix_blend_mode_passthrough">
+            
+            <div class="et_pb_module et_pb_sidebar_0_tb_footer et_pb_widget_area clearfix 
+            et_pb_widget_area_left et_pb_bg_layout_light">
+            
+            <div id="nav_menu-2" class="fwidget et_pb_widget widget_nav_menu">
+                <h4 class="title" STYLE="margin: 0px 400px 20px 100px">Pages</h4><div class="menu-footer-menu-container"><ul id="menu-footer-menu-1" 
+                    class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home 
+                    menu-item-675" STYLE="margin: 0px 400px 20px 100px" ><a href="/home">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-676" STYLE="margin: 0px 400px 20px 100px">
+    <a href="/AboutUs">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-677" STYLE="margin: 0px 400px 20px 100px">
+    <a href="/AboutUs">Vision, Mission &amp; Anthem</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2084" STYLE="margin: 0px 400px 20px 100px">
+    <a href="/ContactUs">Contact Us</a></li>
+</ul></div></div>
+        </div>
+        </div><div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_footer 
+         et_pb_css_mix_blend_mode_passthrough">
+            
+            <div class="et_pb_module et_pb_sidebar_1_tb_footer 
+            et_pb_widget_area clearfix et_pb_widget_area_left et_pb_bg_layout_light">
+            
+        </div>
+        </div><div class="et_pb_column et_pb_column_1_3 et_pb_column_2_tb_footer 
+         et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+            
+        </div>
+        </div>
+        </div><div class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular">
+            
+            <div class="et_pb_row et_pb_row_1_tb_footer" >
+            <div class="et_pb_column et_pb_column_4_4 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough
+             et-last-child">
+            
+            <div class="et_pb_module et_pb_text et_pb_text_0_tb_footer et_clickable 
+             et_pb_text_align_left et_pb_bg_layout_light">
+            <div class="my-0" my=0 style="background:black; ">Copyright @2021.All Rights Reserved. Powered by UniApply – 
+                A product of NoPaperForms solutions Pvt. Ltd.</div>
+        </div>
+        </div>
+        </div>
+        </div>	
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> {% load static %}
+{% endblock body%}
